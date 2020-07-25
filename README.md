@@ -14,4 +14,4 @@
 
 
 ### Solution
-[Video](https://youtu.be/nANwptDBCQo)
+[Watch Video](https://youtu.be/nANwptDBCQo)
