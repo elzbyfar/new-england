@@ -1,4 +1,4 @@
-# new-england
+# New England Info
 
 ### Practice Code Challenge:
  - Review the tile design in the images folder
