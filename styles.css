@@ -74,7 +74,7 @@ Write Your CSS Code Below
 }
 .tile .state-name {
 	opacity: 1;
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-weight: 400;
 }
 .tile:hover .state-name {
