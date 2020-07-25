@@ -15,6 +15,7 @@
 
 ### Solution
 [Watch Full Video](https://youtu.be/nANwptDBCQo)
+
 ![Demo GIF](https://github.com/elzbyfar/new-england/blob/master/images/demo.gif)
 
 ### Sample Image
