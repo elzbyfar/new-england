@@ -1,0 +1,100 @@
+/*---------------------------------------------
+Write Your CSS Code Below
+---------------------------------------------*/
+
+#tiles-342 {
+	margin: 1.2rem 2.4rem;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.header-container {
+	margin-bottom: 1.2rem;
+}
+.page-title {
+	font-size: 3rem;
+	font-weight: 400;
+}
+.page-description {
+	font-size: 0.95rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.body-container {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+	margin-top: 1.2rem;
+}
+.tile-no-hover {
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	background-position: center;
+	color: #fff;
+	min-width: 18rem;
+	min-height: 16rem;
+	cursor: pointer;
+}
+.tile-no-hover .state-name {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+.link-no-hover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.tile {
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	background-color: #000;
+	min-width: 18rem;
+	min-height: 16rem;
+	cursor: pointer;
+}
+.tile::before {
+	content: "";
+	background: var(--backgroundImage);
+	background-size: cover;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.tile:hover::before {
+	opacity: 0.4;
+	background-color: #000;
+}
+.tile * {
+	position: absolute;
+	color: #fff;
+	z-index: 1;
+	text-align: center;
+	transition: all 0.4s ease-in-out;
+}
+.tile .state-name {
+	opacity: 1;
+	font-size: 24px;
+	font-weight: 400;
+}
+.tile:hover .state-name {
+	opacity: 0;
+}
+.tile .state-description {
+	opacity: 0;
+}
+.tile:hover .state-description {
+	opacity: 1;
+}
+.state-description {
+	width: 70%;
+}
+.link {
+	position: absolute;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+}
