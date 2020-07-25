@@ -12,11 +12,12 @@
      - All tiles should click through to the url provided with the correct target.      
  - Save your project!
 
+### Original Sample Image
+![Original Sample Image](https://github.com/elzbyfar/new-england/blob/master/images/tiles_design.jpg)
 
 ### Solution
 [Watch Full Video](https://youtu.be/nANwptDBCQo)
 
 <img src="https://github.com/elzbyfar/new-england/blob/master/images/demo.gif" width="1920" alt="Demo Gif"/>
 
-### Sample Image
-![Original Example Image](https://github.com/elzbyfar/new-england/blob/master/images/tiles_design.jpg)
+
