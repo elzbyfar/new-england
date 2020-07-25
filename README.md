@@ -15,3 +15,6 @@
 
 ### Solution
 [Watch Video](https://youtu.be/nANwptDBCQo)
+
+### Sample Image
+![Original Example Image](https://github.com/elzbyfar/new-england/blob/master/images/tiles_design.jpg)
