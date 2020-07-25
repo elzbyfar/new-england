@@ -14,7 +14,8 @@
 
 
 ### Solution
-[Watch Video](https://youtu.be/nANwptDBCQo)
+[Watch Full Video](https://youtu.be/nANwptDBCQo)
+![Demo GIF](https://github.com/elzbyfar/new-england/blob/master/images/demo.gif)
 
 ### Sample Image
 ![Original Example Image](https://github.com/elzbyfar/new-england/blob/master/images/tiles_design.jpg)
