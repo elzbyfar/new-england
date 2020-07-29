@@ -70,7 +70,6 @@ const createElements = (htmlString) => {
 	return element.firstChild;
 };
 
-
 const headerComponent = ({ title, description }) => {
 	const header = createElements(`
         <section class="header-container">
@@ -88,56 +87,51 @@ const headerComponent = ({ title, description }) => {
 	return header;
 };
 
-
 const divider = document.createElement('hr');
 
-
 const bodyComponent = ({ records }) => {
+	const body = createElements(`<section class="body-container"></section>`);
 
-    const body = createElements(`<section class="body-container"></section>`);
-
-    // create an array of tiles
+	// create an array of tiles
 	const tileElements = records.map((record) => {
 		const tile = createElements(`
             <div class="tile">
                 <h3 class="state-name"></h3>
                 <a class="link"><p class="state-description"></p></a>
             </div>
-            `);
+						`);
 
-        // set background color or create css variable with background image
-        if (record.background_image === "") {
-            tile.style.background = record.background_color;
-        } else {
-            tile.style.setProperty('--backgroundImage', `url(${record.background_image})`)
-        }
+		// set background color or create css variable with background image
+		if (record.background_image === '') {
+			tile.style.background = record.background_color;
+		} else {
+			tile.style.setProperty('--backgroundImage', `url(${record.background_image})`);
+		}
 
 		const stateName = tile.querySelector('.state-name');
-        const stateDescription = tile.querySelector('.state-description');
-        const link = tile.querySelector('.link')
-        link.href = record.link
-        link.target = record.new_window ? "_blank" : ""
+		const stateDescription = tile.querySelector('.state-description');
+		const link = tile.querySelector('.link');
+		link.href = record.link;
+		link.target = record.new_window ? '_blank' : '';
 
-        // disable hover if no description
-        if (record.description === "") {
-            tile.className = "tile-no-hover"
-            link.className = "link-no-hover"
-        }
+		// disable hover if no description
+		if (record.description === '') {
+			tile.className = 'tile-no-hover';
+			link.className = 'link-no-hover';
+		}
 
 		stateName.textContent = record.state;
-        stateDescription.textContent = record.description;
-        
+		stateDescription.textContent = record.description;
+
 		return tile;
 	});
-    
+
 	body.append(...tileElements);
 
 	return body;
 };
 
-
 const wrapper = document.getElementById('tiles-342');
-
 
 wrapper.append(
 	headerComponent({
@@ -149,4 +143,3 @@ wrapper.append(
 		records: json.records
 	})
 );
-
